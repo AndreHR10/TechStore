@@ -7,6 +7,7 @@
     <title>TechStore - Productos Tecnológicos</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="img/Logo_Chip.png" type="image/png"> 
+    <script src="js/javascript.js" defer></script>
 </head>
 
 <body>
@@ -91,10 +92,15 @@
                         <h3 class="catalogo_cantenido__TITULO">Laptop Gamer Pro</h3>
                         <p class="catalogo_cantenido__DESCRIPCION">Procesador de última generación, 16GB RAM, pantalla
                             144Hz ideal para gaming y trabajo.</p>
-                        <p class="catalogo_cantenido__PRECIO">$1,200.00</p>
+                        <p class="catalogo_cantenido__PRECIO">S/ 1,200.00</p>
                         <p class="catalogo_cantenido__STOCK">Stock: 15 unidades</p>
-                        <button class="btn btn_catalago catalogo_cantenido__btn" type="button">Ver Detalles</button>
                     </div>
+                    <button 
+                        class="btn btn_catalago catalogo_cantenido__btn" 
+                        type="button"
+                        data-detalle="Procesador i7, RTX 4060, SSD 1TB">
+                        Ver Detalles
+                    </button> 
                 </article>
 
                 <!-- PRODUCTO 2 -->
@@ -109,10 +115,15 @@
                         <h3 class="catalogo_cantenido__TITULO">Smartphone 5G</h3>
                         <p class="catalogo_cantenido__DESCRIPCION">Conectividad 5G, cámara de 108MP, batería de 5000mAh
                             y pantalla AMOLED de 6.7".</p>
-                        <p class="catalogo_cantenido__PRECIO">$750.00</p>
-                        <p class="catalogo_cantenido__STOCK">Stock: 30 unidades</p>
-                        <button class="btn btn_catalago catalogo_cantenido__btn" type="button">Ver Detalles</button>
+                        <p class="catalogo_cantenido__PRECIO">S/ 750.00</p>
+                        <p class="catalogo_cantenido__STOCK">Stock: 30 unidades</p>     
                     </div>
+                    <button 
+                            class="btn btn_catalago catalogo_cantenido__btn" 
+                            type="button"
+                            data-detalle="5G, Cámara 108MP, Batería 5000mAh">
+                            Ver Detalles
+                        </button>
                 </article>
 
                 <!-- PRODUCTO 3 -->
@@ -127,10 +138,15 @@
                         <h3 class="catalogo_cantenido__TITULO">Audífonos Bluetooth</h3>
                         <p class="catalogo_cantenido__DESCRIPCION">Sonido envolvente 360°, cancelación de ruido activa y
                             hasta 30 horas de batería.</p>
-                        <p class="catalogo_cantenido__PRECIO">$85.00</p>
+                        <p class="catalogo_cantenido__PRECIO">S/ 85.00</p>
                         <p class="catalogo_cantenido__STOCK">Stock: 50 unidades</p>
-                        <button class="btn btn_catalago catalogo_cantenido__btn" type="button">Ver Detalles</button>
                     </div>
+                    <button 
+                            class="btn btn_catalago catalogo_cantenido__btn" 
+                            type="button"
+                            data-detalle="Cancelación de ruido, 30h batería, Sonido 360">
+                            Ver Detalles
+                        </button>
                 </article>
 
                 <!-- PRODUCTO 4 -->
@@ -145,10 +161,15 @@
                         <h3 class="catalogo_cantenido__TITULO">Teclado Mecánico RGB</h3>
                         <p class="catalogo_cantenido__DESCRIPCION">Switches mecánicos táctiles, iluminación RGB
                             personalizable y diseño compacto TKL.</p>
-                        <p class="catalogo_cantenido__PRECIO">$65.00</p>
+                        <p class="catalogo_cantenido__PRECIO">S/ 65.00</p>
                         <p class="catalogo_cantenido__STOCK">Stock: 25 unidades</p>
-                        <button class="btn btn_catalago catalogo_cantenido__btn" type="button">Ver Detalles</button>
                     </div>
+                    <button 
+                            class="btn btn_catalago catalogo_cantenido__btn" 
+                            type="button"
+                            data-detalle="Switches mecánicos, RGB, Diseño TKL">
+                            Ver Detalles
+                        </button>
                 </article>
 
             </div>
@@ -176,25 +197,25 @@
                         <tr class="products-table__row">
                             <td class="productos_tabla__cell">001</td>
                             <td class="productos_tabla__cell productos_tabla__cell__NAME">Laptop Gamer Pro</td>
-                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">$1,200.00</td>
+                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">S/ 1,200.00</td>
                             <td class="productos_tabla__cell productos_tabla__cell__STOCK">15 unidades</td>
                         </tr>
                         <tr class="productos_tabla__row">
                             <td class="productos_tabla__cell">002</td>
                             <td class="productos_tabla__cell productos_tabla__cell__NAME">Smartphone 5G</td>
-                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">$750.00</td>
+                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">S/ 50.00</td>
                             <td class="productos_tabla__cell productos_tabla__cell__STOCK">30 unidades</td>
                         </tr>
                         <tr class="productos_tabla__row">
                             <td class="productos_tabla__cell">003</td>
                             <td class="productos_tabla__cell productos_tabla__cell__NAME">Audífonos Bluetooth</td>
-                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">$85.00</td>
+                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">S/ 85.00</td>
                             <td class="productos_tabla__cell productos_tabla__cell__STOCK">50 unidades</td>
                         </tr>
                         <tr class="productos_tabla__row">
                             <td class="productos_tabla__cell">004</td>
                             <td class="productos_tabla__cell productos_tabla__cell__NAME">Teclado Mecánico RGB</td>
-                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">$65.00</td>
+                            <td class="productos_tabla__cell productos_tabla__cell__PRECIO">S/ 65.00</td>
                             <td class="productos_tabla__cell productos_tabla__cell__STOCK">25 unidades</td>
                         </tr>
                     </tbody>
@@ -242,10 +263,9 @@
     <!-- PIE DE PÁGINA -->
     <footer class="site-footer">
         <div class="footer-content">
-            <p class="footer-copy">&copy; 2026 TechStore. Todos los derechos reservados.</p>
+            <p class="footer-copy">&copy; 2026 TechStore.</p>
         </div>
     </footer>
-
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+/*@author Francisco Cesar Salazar Lozano*/
 
 /* 
 RESET Y BASE
@@ -186,6 +187,8 @@ CATÁLOGO
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .catalogo_cantenido:hover {
@@ -300,22 +303,30 @@ TABLA PRODUCTOS
 BOTONES
 */
 .btn {
-    padding: 10px 15px;
+    padding: 10px 25px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 500;  
 }
 
 .btn_catalago {
+    width: 60%;   
     background: #2563eb;
     color: white;
     transition: 0.3s;
+    margin-top: auto;      
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 15px; 
+    transition: 0.3s; 
+
 }
 
 .btn_catalago:hover {
     background: #1d4ed8;
 }
+
 
 .btn_EnviarMensaje {
     background: #2563eb;
@@ -415,4 +426,16 @@ SCROLLBAR
 ::-webkit-scrollbar-thumb:hover {
     background: #2563eb;
     cursor: pointer;
+}
+
+/* 
+preubas
+*/
+
+.catalogo_cantenido__body {
+    flex-grow: 1; /* ocupa espacio disponible */
+}
+
+.catalogo_cantenido__btn {
+    margin-top: auto; /* empuja el botón abajo SIEMPRE */
 }

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Productos Tecnológicos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/Logo_Chip.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="js/javascript.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="site-header">
+        <div class="site-logo">
+            <h1 class="logo-title">TechStore</h1>
+        </div>
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link" onclick="irInicio(this); return false;">Inicio</a></li>
+                <li><a href="#" class="nav-link" onclick="irCatalogo(this); return false;">Catálogo</a></li>
+                <li><a href="#" class="nav-link" onclick="irContacto(this); return false;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MENSAJE ANIMADO -->
+    <div class="mensaje_animado_container">
+        <div class="mensaje_animado">
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+            <span>🚀 Descubre la mejor tecnología gamer en TechStore 🚀</span>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="site-main">
+
+        <!-- SECCIÓN: INICIO -->
+        <section id="inicio" class="section section_Inicio">
+            <div class="section_contentido">
+                <h2 class="section_titulo">El Futuro en tus Manos</h2>
+                <p class="section_descripcion">Descubre la última tecnología con los mejores precios del mercado.
+                    Innovación, calidad y rendimiento.</p>
+            </div>
+        </section>
+        <!--CUADROS DE BENEFICIOS -->
+        <Section class="section_Beneficios">
+            <div class="section_Beneficios_titulo">
+                <h2>¿Por qué elegirnos?</h2>
+                <div class="linea"></div>
+            </div>
+            <div class="beneficio_cuadros">
+
+                <div class="beneficio_contenido">
+                    <div class="beneficio_contenido_icon">⭐</div>
+                    <h3 class="beneficio_contenido_titulo">Soporte 24/7</h3>
+                    <p class="beneficio_contenido_descripcion">Nuestro equipo de expertos está listo para ayudarte en
+                        cualquier momento.</p>
+                </div>
+
+                <div class="beneficio_contenido">
+                    <div class="beneficio_contenido_icon">🚚</div>
+                    <h3 class="beneficio_contenido_titulo">Envío Seguro</h3>
+                    <p class="beneficio_contenido_descripcion">Todos nuestros envíos están asegurados y rastreados en
+                        tiempo real para que recibas tu pedido sin inconvenientes.</p>
+                </div>
+
+                <div class="beneficio_contenido">
+                    <div class="beneficio_contenido_icon">🛡️</div>
+                    <h3 class="beneficio_contenido_titulo">Garantía Total</h3>
+                    <p class="beneficio_contenido_descripcion">Ofrecemos garantía en todos nuestros productos. Si no
+                        estás satisfecho, te lo cambiamos sin preguntas.</p>
+                </div>
+
+            </div>
+        </Section>
+
+        <!-- SECCIÓN SOBRE NOSOTROS -->
+        <section class="section_nosotros">
+
+            <div class="nosotros_imagen">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                    alt="Tecnología">
+            </div>
+
+            <div class="nosotros_contenido">
+                <h2 class="nosotros_titulo">Conoce TechStore</h2>
+
+                <p class="nosotros_texto">
+                    En TechStore, nacimos con el sueño de acercar las innovaciones más avanzadas
+                    a cada hogar. No solo vendemos productos, ofrecemos soluciones que mejoran
+                    tu estilo de vida.
+                </p>
+
+                <p class="nosotros_texto">
+                    Con más de 10 años en el mercado, hemos trabajado con las marcas más
+                    importantes del mundo para garantizarte solo lo mejor.
+                </p>
+
+                <div class="nosotros_lista">
+                    <p>✔ Calidad Certificada</p>
+                    <p>✔ Precios Competitivos</p>
+                    <p>✔ Innovación Constante</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN: CATÁLOGO -->
+        <section id="catalogo" class="section section_catalogo">
+            <div class="section_content_1">
+                <h2 class="section_titulo_1">Productos Destacados</h2>
+                <p class="section_descripcion_1">Explora nuestra selección de productos tecnológicos destacados.</p>
+                <div class="linea"></div>
+
+                <div class="section_ver_catalogo">
+                    <a href="#" onclick="mostrarCatalogo(); return false;" class="ver_catalogo">Ver catálogo completo
+                        →</a>
+                </div>
+            </div>
+
+            <div class="catalogo_Madre">
+
+                <!-- PRODUCTO 1 -->
+                <article class="catalogo_cantenido">
+                    <div class="catalogo_cantenido_imagen_wrapper">
+                        <img class="catalogo_cantenido_imagen"
+                            src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80"
+                            alt="Laptop Gamer Pro">
+                    </div>
+                    <div class="catalogo_cantenido_body">
+                        <span class="catalogo_cantenido_badge">Más vendido</span>
+                        <h3 class="catalogo_cantenido_TITULO">Laptop Gamer Pro</h3>
+                        <p class="catalogo_cantenido_DESCRIPCION">Procesador de última generación, 16GB RAM, pantalla
+                            144Hz ideal para gaming y trabajo.</p>
+                        <p class="catalogo_cantenido_PRECIO">S/ 1,200.00</p>
+                        <p class="catalogo_cantenido_STOCK">Stock: 15 unidades</p>
+                    </div>
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Procesador i7, RTX 4060, SSD 1TB">
+                        Ver Detalles
+                    </button>
+                </article>
+
+                <!-- PRODUCTO 2 -->
+                <article class="catalogo_cantenido">
+                    <div class="catalogo_cantenido_imagen_wrapper">
+                        <img class="catalogo_cantenido_imagen"
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                            alt="Smartphone 5G">
+                    </div>
+                    <div class="catalogo_cantenido_body">
+                        <span class="catalogo_cantenido_badge">Nuevo</span>
+                        <h3 class="catalogo_cantenido_TITULO">Smartphone 5G</h3>
+                        <p class="catalogo_cantenido_DESCRIPCION">Conectividad 5G, cámara de 108MP, batería de 5000mAh
+                            y pantalla AMOLED de 6.7".</p>
+                        <p class="catalogo_cantenido_PRECIO">S/ 750.00</p>
+                        <p class="catalogo_cantenido_STOCK">Stock: 30 unidades</p>
+                    </div>
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="5G, Cámara 108MP, Batería 5000mAh">
+                        Ver Detalles
+                    </button>
+                </article>
+
+                <!-- PRODUCTO 3 -->
+                <article class="catalogo_cantenido">
+                    <div class="catalogo_cantenido_imagen_wrapper">
+                        <img class="catalogo_cantenido_imagen"
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                            alt="Audífonos Bluetooth">
+                    </div>
+                    <div class="catalogo_cantenido_body">
+                        <span class="catalogo_cantenido_badge">Oferta</span>
+                        <h3 class="catalogo_cantenido_TITULO">Audífonos Bluetooth</h3>
+                        <p class="catalogo_cantenido_DESCRIPCION">Sonido envolvente 360°, cancelación de ruido activa y
+                            hasta 30 horas de batería.</p>
+                        <p class="catalogo_cantenido_PRECIO">S/ 85.00</p>
+                        <p class="catalogo_cantenido_STOCK">Stock: 50 unidades</p>
+                    </div>
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Cancelación de ruido, 30h batería, Sonido 360">
+                        Ver Detalles
+                    </button>
+                </article>
+
+                <!-- PRODUCTO 4 -->
+                <article class="catalogo_cantenido">
+                    <div class="catalogo_cantenido_imagen_wrapper">
+                        <img class="catalogo_cantenido_imagen"
+                            src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?auto=format&fit=crop&w=600&q=80"
+                            alt="Teclado Mecánico RGB">
+                    </div>
+                    <div class="catalogo_cantenido_body">
+                        <span class="catalogo_cantenido_badge">Oferta</span>
+                        <h3 class="catalogo_cantenido_TITULO">Teclado Mecánico RGB</h3>
+                        <p class="catalogo_cantenido_DESCRIPCION">Switches mecánicos táctiles, iluminación RGB
+                            personalizable y diseño compacto TKL.</p>
+                        <p class="catalogo_cantenido_PRECIO">S/ 65.00</p>
+                        <p class="catalogo_cantenido_STOCK">Stock: 25 unidades</p>
+                    </div>
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Switches mecánicos, RGB, Diseño TKL">
+                        Ver Detalles
+                    </button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- CATALAGO COMPLETO -->
+    <section id="catalogo_completo" style="display: none;" class="section">
+
+        <div class="section_content_1_2">
+            <h2 class="section_titulo_1_2">Catálogo de Productos</h2>
+            <p class="section_descripcion_1_2">Visualiza y gestiona nuestros productos a través de tarjetas o mediante
+                una tabla estructurada.</p>
+            <div class="linea2"></div>
+            <!-- VISTAS -->
+            <div class="vista">
+                <button class="activo" onclick="cambiarVista('grid')">⬜ Catalago</button>
+                <button onclick="cambiarVista('tabla')">☰ Tabla</button>
+            </div>
+        </div>
+        <div class="catalogo_controls">
+            <div class="controls_izquierda">
+                <!-- BUSCADOR -->
+                <div class="buscador_box">
+                    <input type="text" id="buscador" placeholder=" Buscar por nombre o descripción...">
+                </div>
+
+                <!-- FILTROS -->
+                <div class="filtros">
+                    <button class="activo" onclick="filtrar('all', this)">Todas</button>
+                    <button onclick="filtrar('laptop', this)">Laptops</button>
+                    <button onclick="filtrar('celular', this)">Celulares</button>
+                    <button onclick="filtrar('monitor', this)">Monitores</button>
+                    <button onclick="filtrar('accesorio', this)">Accesorios</button>
+                    <button onclick="filtrar('streaming', this)">Streaming</button>
+                    <button onclick="filtrar('tablet', this)">Tablets</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalogo_Madre_2">
+
+            <!-- PRODUCTO 1 -->
+            <article class="catalogo_cantenido" data-categoria="laptop">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80"
+                        alt="Laptop Gamer Pro">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Más vendido</span>
+                    <h3 class="catalogo_cantenido_TITULO">Laptop Gamer Pro</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Procesador de última generación, 16GB RAM, pantalla
+                        144Hz ideal para gaming y trabajo.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 1,200.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 15 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="Procesador i7, RTX 4060, SSD 1TB">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 2 -->
+            <article class="catalogo_cantenido" data-categoria="celular">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                        alt="Smartphone 5G">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Nuevo</span>
+                    <h3 class="catalogo_cantenido_TITULO">Smartphone 5G</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Conectividad 5G, cámara de 108MP, batería de 5000mAh
+                        y pantalla AMOLED de 6.7".</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 750.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 30 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="5G, Cámara 108MP, Batería 5000mAh">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 3 -->
+            <article class="catalogo_cantenido" data-categoria="accesorio">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                        alt="Audífonos Bluetooth">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Oferta</span>
+                    <h3 class="catalogo_cantenido_TITULO">Audífonos Bluetooth</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Sonido envolvente 360°, cancelación de ruido activa y
+                        hasta 30 horas de batería.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 85.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 50 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="Cancelación de ruido, 30h batería, Sonido 360">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 4 -->
+            <article class="catalogo_cantenido" data-categoria="accesorio">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://thumbs.dreamstime.com/b/teclado-para-juegos-con-luz-rgb-mecánico-blanco-foco-suave-de-retroiluminación-el-concepto-esports-212226934.jpg"
+                        alt="Teclado Mecánico RGB">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Oferta</span>
+                    <h3 class="catalogo_cantenido_TITULO">Teclado Mecánico RGB</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Switches mecánicos táctiles, iluminación RGB
+                        personalizable y diseño compacto TKL.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 65.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 25 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="Switches mecánicos, RGB, Diseño TKL">
+                    Ver Detalles
+                </button>
+            </article>
+            <!-- PRODUCTO 5 -->
+            <article class="catalogo_cantenido" data-categoria="monitor">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://dasmitec.pe/wp-content/uploads/2021/12/X24ih-1.jpg" alt="Monitor Gaming 24">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Nuevo</span>
+                    <h3 class="catalogo_cantenido_TITULO">Monitor Gaming 24"</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Pantalla Full HD, 165Hz, tiempo de respuesta 1ms ideal
+                        para gamers.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 650.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 20 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="165Hz, 1ms, Full HD">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 6 -->
+            <article class="catalogo_cantenido" data-categoria="accesorio">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://http2.mlstatic.com/D_NQ_NP_867878-MLA102381662692_122025-O.webp"
+                        alt="Mouse Gamer RGB">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Oferta</span>
+                    <h3 class="catalogo_cantenido_TITULO">Mouse Gamer RGB</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Sensor óptico de alta precisión, iluminación RGB y
+                        ergonómico.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 45.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 40 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="RGB, 6400 DPI, ergonómico">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 7 -->
+            <article class="catalogo_cantenido" data-categoria="tablet">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq1ev-60uxHRiAnV82eb2B4zX0X87RZ1sf3g&s"
+                        alt="Tablet 10 pulgadas">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Nuevo</span>
+                    <h3 class="catalogo_cantenido_TITULO">Tablet 10"</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Pantalla HD, 64GB almacenamiento, ideal para estudio y
+                        entretenimiento.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 320.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 18 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button" data-detalle="64GB, HD, Android">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 8 -->
+            <article class="catalogo_cantenido" data-categoria="accesorio">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://plazavea.vteximg.com.br/arquivos/ids/2606024-418-418/image-855a559657b54498bd2a7d627efd1b46.jpg"
+                        alt="Audífonos Gamer">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Top</span>
+                    <h3 class="catalogo_cantenido_TITULO">Audífonos Gamer RGB</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Sonido envolvente, micrófono con cancelación de ruido y
+                        luces RGB.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 150.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 18 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="7.1 Surround, micrófono noise cancelling, RGB">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 9 -->
+            <article class="catalogo_cantenido" data-categoria="laptop">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+                        alt="Laptop Ultrabook">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Nuevo</span>
+                    <h3 class="catalogo_cantenido_TITULO">Laptop Ultrabook</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Ligera y potente, 8GB RAM, SSD 512GB, ideal para trabajo.
+                    </p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 980.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 12 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="SSD 512GB, 8GB RAM, ligera">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 10 -->
+            <article class="catalogo_cantenido" data-categoria="streaming">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://compuciber.com/wp-content/uploads/2017/06/blog4-jpg.webp" alt="PC Gamer">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Top</span>
+                    <h3 class="catalogo_cantenido_TITULO">PC Gamer</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Alto rendimiento con RTX, ideal para juegos y streaming.
+                    </p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 2500.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 10 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button" data-detalle="RTX, 32GB RAM, SSD">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 11 -->
+            <article class="catalogo_cantenido" data-categoria="streaming">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://fotoperu35.com/tienda/5672-large_default/camara-web-m9-pro-full-hd-1080p-60fps-con-microfono-estereo.jpg"
+                        alt="Webcam HD">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Nuevo</span>
+                    <h3 class="catalogo_cantenido_TITULO">Webcam Full HD</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Ideal para streaming y videollamadas, con micrófono
+                        integrado y resolución 1080p.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 120.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 25 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="Full HD 1080p, micrófono integrado, USB plug & play">
+                    Ver Detalles
+                </button>
+            </article>
+
+            <!-- PRODUCTO 12 -->
+            <article class="catalogo_cantenido" data-categoria="accesorio">
+                <div class="catalogo_cantenido_imagen_wrapper">
+                    <img class="catalogo_cantenido_imagen"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR1kNNJLKtkltcYe4kQrwP9aUPLYXr7H15Kg&s"
+                        alt="Parlante Bluetooth">
+                </div>
+                <div class="catalogo_cantenido_body">
+                    <span class="catalogo_cantenido_badge">Nuevo</span>
+                    <h3 class="catalogo_cantenido_TITULO">Parlante Bluetooth</h3>
+                    <p class="catalogo_cantenido_DESCRIPCION">Sonido potente, resistente al agua y batería de larga
+                        duración.</p>
+                    <p class="catalogo_cantenido_PRECIO">S/ 95.00</p>
+                    <p class="catalogo_cantenido_STOCK">Stock: 22 unidades</p>
+                </div>
+                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                    data-detalle="Bluetooth 5.0, waterproof, 20h batería">
+                    Ver Detalles
+                </button>
+            </article>
+        </div>
+
+        <!-- Tabla Catalago -->
+        <div id="vista_tabla" style="display: none;">
+            <div class="table-wrapper">
+                <table class="productos_tabla">
+                    <thead class="productos_tabla_head">
+                        <tr class="productos_tabla_head">
+                            <th class="productos_tabla_header" scope="col">
+                                <div class="linea2"></div>
+                            </th>
+                            <th class="productos_tabla_header" scope="col">Producto</th>
+                            <th class="productos_tabla_header" scope="col">Categoria</th>
+                            <th class="productos_tabla_header" scope="col">Precio</th>
+                            <th class="productos_tabla_header" scope="col">Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody class="productos_tabla_row_body">
+
+                        <!-- 1 -->
+                        <tr class="productos_tabla_row" data-categoria="laptop">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80"
+                                        alt="Laptop">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Laptop Gamer Pro</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Laptop</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 1,200.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">15 unidades</td>
+                        </tr>
+
+                        <!-- 2 -->
+                        <tr class="productos_tabla_row" data-categoria="celular">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                                        alt="Celular">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Smartphone 5G</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Celular</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 750.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">30 unidades</td>
+                        </tr>
+
+                        <!-- 3 -->
+                        <tr class="productos_tabla_row" data-categoria="accesorio">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                                        alt="Audífonos">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Audífonos Bluetooth</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Accesorio</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 85.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">50 unidades</td>
+                        </tr>
+
+                        <!-- 4 -->
+                        <tr class="productos_tabla_row" data-categoria="accesorio">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://thumbs.dreamstime.com/b/teclado-para-juegos-con-luz-rgb-mecánico-blanco-foco-suave-de-retroiluminación-el-concepto-esports-212226934.jpg"
+                                        alt="Teclado">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Teclado Mecánico RGB</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Accesorio</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 65.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">25 unidades</td>
+                        </tr>
+
+                        <!-- 5 -->
+                        <tr class="productos_tabla_row" data-categoria="monitor">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://dasmitec.pe/wp-content/uploads/2021/12/X24ih-1.jpg" alt="Monitor">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Monitor Gaming 24"</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Monitor</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 650.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">20 unidades</td>
+                        </tr>
+
+                        <!-- 6 -->
+                        <tr class="productos_tabla_row" data-categoria="accesorio">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://http2.mlstatic.com/D_NQ_NP_867878-MLA102381662692_122025-O.webp"
+                                        alt="Mouse">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Mouse Gamer RGB</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Accesorio</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 45.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">40 unidades</td>
+                        </tr>
+
+                        <!-- 7 -->
+                        <tr class="productos_tabla_row" data-categoria="tablet">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq1ev-60uxHRiAnV82eb2B4zX0X87RZ1sf3g&s"
+                                        alt="Tablet">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Tablet 10"</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Tablet</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 320.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">18 unidades</td>
+                        </tr>
+
+                        <!-- 8 -->
+                        <tr class="productos_tabla_row" data-categoria="accesorio">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://plazavea.vteximg.com.br/arquivos/ids/2606024-418-418/image-855a559657b54498bd2a7d627efd1b46.jpg"
+                                        alt="Audífonos gamer">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Audífonos Gamer RGB</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Accesorio</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 150.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">18 unidades</td>
+                        </tr>
+
+                        <!-- 9 -->
+                        <tr class="productos_tabla_row" data-categoria="laptop">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+                                        alt="Ultrabook">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Laptop Ultrabook</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Laptop</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 980.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">12 unidades</td>
+                        </tr>
+
+                        <!-- 10 -->
+                        <tr class="productos_tabla_row" data-categoria="streaming">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://compuciber.com/wp-content/uploads/2017/06/blog4-jpg.webp"
+                                        alt="PC Gamer">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">PC Gamer</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Streaming</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 2,500.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">10 unidades</td>
+                        </tr>
+
+                        <!-- 11 -->
+                        <tr class="productos_tabla_row" data-categoria="streaming">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://fotoperu35.com/tienda/5672-large_default/camara-web-m9-pro-full-hd-1080p-60fps-con-microfono-estereo.jpg"
+                                        alt="Webcam">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Webcam Full HD</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Streaming</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 120.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">25 unidades</td>
+                        </tr>
+
+                        <!-- 12 -->
+                        <tr class="productos_tabla_row" data-categoria="accesorio">
+                            <td class="productos_tabla_cell productos_tabla_cell_imagen">
+                                <div class="categoria_icon">
+                                    <img class="categoria_icon_img"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR1kNNJLKtkltcYe4kQrwP9aUPLYXr7H15Kg&s"
+                                        alt="Parlante">
+                                </div>
+                            </td>
+                            <td class="productos_tabla_cell productos_tabla_cell_NAME">Parlante Bluetooth</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_CATEGORIA">Accesorio</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_PRECIO">S/ 95.00</td>
+                            <td class="productos_tabla_cell productos_tabla_cell_STOCK">22 unidades</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CONTACTO -->
+    <section id="contacto" style="display: none" class="section section_contacto">
+        <div class="section_content_3">
+            <h2 class="section_titulo_3">Contáctanos</h2>
+            <p class="section_descripcion_3">Envíanos tus consultas y te responderemos a la brevedad.</p>
+            <div class="linea"></div>
+        </div>
+
+        <form class="contacto_form" action="#" method="POST" novalidate>
+
+            <div class="form_cuerpo">
+                <label class="form-label" for="nombre">Nombre Completo:</label>
+                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"
+                    required>
+            </div>
+
+            <div class="form_cuerpo">
+                <label class="form-label" for="correo">Correo Electrónico:</label>
+                <input class="form-input" type="email" id="correo" name="correo" placeholder="ejemplo@correo.com"
+                    required>
+            </div>
+
+            <div class="form_cuerpo">
+                <label class="form-label" for="mensaje">Mensaje:</label>
+                <textarea class="form-textarea" id="mensaje" name="mensaje" rows="8"
+                    placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+
+            <div class="form_Mensaje">
+                <button class="btn btn_EnviarMensaje" type="submit">Enviar Mensaje</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-copy">&copy; 2026 TechStore.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

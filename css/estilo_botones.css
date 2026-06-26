@@ -1,0 +1,123 @@
+/* 
+BOTONES
+*/
+
+.btn {
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn_catalago {
+    width: 60%;
+    background: #2563eb;
+    color: white;
+    transition: 0.3s;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    margin-bottom: 10px;
+    transition: 0.3s;
+
+}
+
+.btn_catalago:hover {
+    background: #1141b1;
+}
+
+.btn_agregar{
+    width: 90px;
+    background: #2563eb;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.btn_agregar:hover{
+    background: #1141b1;
+}
+
+.btn_agregar i{
+    font-size: 20px;
+}
+
+
+.btn_EnviarMensaje {
+    background: #2563eb;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn_EnviarMensaje:hover {
+    background: #1d4ed8;
+}
+
+.btn-proceder-pago {
+    width: 100%;
+    background: #5d3df3; 
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-proceder-pago:hover {
+    background: #4a2ec5;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+}
+
+.btn-eliminar-producto {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn-eliminar-producto:hover {
+    color: #ef4444;
+}
+
+#btn_cerrar_carrito.close-btn:hover,
+.close-btn:hover,
+#btn_cerrar_carrito.close-btn:focus,
+.close-btn:focus{
+  color: #ef4444;
+}
+
+.btn-modal{
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-cancel{
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.btn-confirmar{
+  background: #5d3df3;
+  color: #fff;
+}

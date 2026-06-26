@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - Productos Tecnológicos</title>
+
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo_global.css">
+    <link rel="stylesheet" href="css/estilo_header.css">
+    <link rel="stylesheet" href="css/estilo_animaciones.css">
+    <link rel="stylesheet" href="css/estilo_secciones_generales.css">
+    <link rel="stylesheet" href="css/estilo_beneficios.css">
+    <link rel="stylesheet" href="css/estilo_seccion_nosotros.css">
+    <link rel="stylesheet" href="css/estilo_seccion_destacados.css">
+    <link rel="stylesheet" href="css/estilo_seccion_catalago.css">
+    <link rel="stylesheet" href="css/estilo_seccion_catalago_tabla.css">
+    <link rel="stylesheet" href="css/estilo_botones.css">
+    <link rel="stylesheet" href="css/estilo_seccion_contacto.css">
+    <link rel="stylesheet" href="css/estilo_seccion_footer.css">
+    <link rel="stylesheet" href="css/estilo_panel_de_compra.css">
+    <link rel="stylesheet" href="css/estilo_panel_de_productos.css">
+    <link rel="stylesheet" href="css/estilo_modal.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/pruebas.css">
+
     <link rel="icon" href="img/Logo_Chip.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <script src="js/javascript.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/catalago.js" defer></script>
+    <script src="js/vistas.js" defer></script>
+    <script src="js/carro_de_compras.js" defer></script>
+    <script src="js/pruebas.js" defer></script>
+
 </head>
 
 <body>
@@ -23,6 +50,9 @@
                 <li><a href="#" class="nav-link" onclick="irInicio(this); return false;">Inicio</a></li>
                 <li><a href="#" class="nav-link" onclick="irCatalogo(this); return false;">Catálogo</a></li>
                 <li><a href="#" class="nav-link" onclick="irContacto(this); return false;">Contacto</a></li>
+                <li><a href="#" class="nav-link" id="btn_abrir_carrito_menu" style="position:relative;"><i
+                            class="fa-solid fa-cart-shopping"></i><span id="cart-badge" class="cart-badge">0</span></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -146,10 +176,14 @@
                         <p class="catalogo_cantenido_PRECIO">S/ 1,200.00</p>
                         <p class="catalogo_cantenido_STOCK">Stock: 15 unidades</p>
                     </div>
-                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                        data-detalle="Procesador i7, RTX 4060, SSD 1TB">
-                        Ver Detalles
-                    </button>
+                    <div class="catalogo_cantenido_acciones">
+                        <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                            data-detalle="Intel Core i7, RTX 4060, 16 GB RAM, SSD 1 TB, Pantalla Full HD 144 Hz">
+                            Detalles
+                        </button>
+
+                        <button class="btn btn_agregar" type="button"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
                 </article>
 
                 <!-- PRODUCTO 2 -->
@@ -167,10 +201,16 @@
                         <p class="catalogo_cantenido_PRECIO">S/ 750.00</p>
                         <p class="catalogo_cantenido_STOCK">Stock: 30 unidades</p>
                     </div>
-                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                        data-detalle="5G, Cámara 108MP, Batería 5000mAh">
-                        Ver Detalles
-                    </button>
+                    <div class="catalogo_cantenido_acciones">
+                        <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                            data-detalle="5G, Cámara 108 MP, Batería 5000 mAh, Pantalla AMOLED 6.7, Carga rápida">
+                            Detalles
+                        </button>
+
+                        <button class="btn btn_agregar" type="button">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
                 </article>
 
                 <!-- PRODUCTO 3 -->
@@ -188,17 +228,23 @@
                         <p class="catalogo_cantenido_PRECIO">S/ 85.00</p>
                         <p class="catalogo_cantenido_STOCK">Stock: 50 unidades</p>
                     </div>
-                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                        data-detalle="Cancelación de ruido, 30h batería, Sonido 360">
-                        Ver Detalles
-                    </button>
+                    <div class="catalogo_cantenido_acciones">
+                        <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                            data-detalle="Bluetooth 5.3, Cancelación de ruido, Sonido 360°, Batería 30 h, Micrófono HD">
+                            Detalles
+                        </button>
+
+                        <button class="btn btn_agregar" type="button">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
                 </article>
 
                 <!-- PRODUCTO 4 -->
                 <article class="catalogo_cantenido">
                     <div class="catalogo_cantenido_imagen_wrapper">
                         <img class="catalogo_cantenido_imagen"
-                            src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?auto=format&fit=crop&w=600&q=80"
+                            src="https://thumbs.dreamstime.com/b/teclado-para-juegos-con-luz-rgb-mecánico-blanco-foco-suave-de-retroiluminación-el-concepto-esports-212226934.jpg"
                             alt="Teclado Mecánico RGB">
                     </div>
                     <div class="catalogo_cantenido_body">
@@ -209,10 +255,16 @@
                         <p class="catalogo_cantenido_PRECIO">S/ 65.00</p>
                         <p class="catalogo_cantenido_STOCK">Stock: 25 unidades</p>
                     </div>
-                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                        data-detalle="Switches mecánicos, RGB, Diseño TKL">
-                        Ver Detalles
-                    </button>
+                    <div class="catalogo_cantenido_acciones">
+                        <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                            data-detalle="Switches mecánicos, RGB personalizable, Diseño TKL, Anti-Ghosting, Cable USB">
+                            Detalles
+                        </button>
+
+                        <button class="btn btn_agregar" type="button">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
                 </article>
 
             </div>
@@ -270,10 +322,14 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 1,200.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 15 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="Procesador i7, RTX 4060, SSD 1TB">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Intel Core i7, RTX 4060, 16 GB RAM, SSD 1 TB, Pantalla Full HD 144 Hz">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
             </article>
 
             <!-- PRODUCTO 2 -->
@@ -291,10 +347,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 750.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 30 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="5G, Cámara 108MP, Batería 5000mAh">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="5G, Cámara 108 MP, Batería 5000 mAh, Pantalla AMOLED 6.7, Carga rápida">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 3 -->
@@ -312,10 +374,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 85.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 50 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="Cancelación de ruido, 30h batería, Sonido 360">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Bluetooth 5.3, Cancelación de ruido, Sonido 360°, Batería 30 h, Micrófono HD">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 4 -->
@@ -333,10 +401,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 65.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 25 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="Switches mecánicos, RGB, Diseño TKL">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Switches mecánicos, RGB personalizable, Diseño TKL, Anti-Ghosting, Cable USB">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
             <!-- PRODUCTO 5 -->
             <article class="catalogo_cantenido" data-categoria="monitor">
@@ -352,10 +426,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 650.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 20 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="165Hz, 1ms, Full HD">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="24 pulgadas, Full HD, 165 Hz, 1 ms, FreeSync">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 6 -->
@@ -373,10 +453,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 45.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 40 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="RGB, 6400 DPI, ergonómico">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="6400 DPI, RGB, Diseño ergonómico, 6 botones, Sensor óptico">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 7 -->
@@ -394,9 +480,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 320.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 18 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button" data-detalle="64GB, HD, Android">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Pantalla HD, 64 GB, Android, Wi-Fi, Batería 7000 mAh">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 8 -->
@@ -414,10 +507,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 150.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 18 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="7.1 Surround, micrófono noise cancelling, RGB">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Sonido 7.1, RGB, Micrófono desmontable, Cancelación de ruido, Conector USB">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 9 -->
@@ -435,10 +534,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 980.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 12 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="SSD 512GB, 8GB RAM, ligera">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Intel Core i5, 8 GB RAM, SSD 512 GB, Pantalla Full HD, Peso ligero">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 10 -->
@@ -455,9 +560,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 2500.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 10 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button" data-detalle="RTX, 32GB RAM, SSD">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="RTX 4070, 32 GB RAM, SSD 1 TB, Intel Core i7, Refrigeración líquida">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 11 -->
@@ -475,10 +587,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 120.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 25 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="Full HD 1080p, micrófono integrado, USB plug & play">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Full HD 1080p, Micrófono integrado, USB Plug & Play, Autofocus, 60 FPS">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
 
             <!-- PRODUCTO 12 -->
@@ -496,10 +614,16 @@
                     <p class="catalogo_cantenido_PRECIO">S/ 95.00</p>
                     <p class="catalogo_cantenido_STOCK">Stock: 22 unidades</p>
                 </div>
-                <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
-                    data-detalle="Bluetooth 5.0, waterproof, 20h batería">
-                    Ver Detalles
-                </button>
+                <div class="catalogo_cantenido_acciones">
+                    <button class="btn btn_catalago catalogo_cantenido_btn" type="button"
+                        data-detalle="Bluetooth 5.0, Resistente al agua, Batería 20 h, Sonido estéreo, Puerto USB-C">
+                        Detalles
+                    </button>
+
+                    <button class="btn btn_agregar" type="button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </article>
         </div>
 
@@ -745,6 +869,64 @@
             <p class="footer-copy">&copy; 2026 TechStore.</p>
         </div>
     </footer>
+
+    <!-- PANEL DEL CARRITO -->
+    <div id="carrito_panel" class="carrito-side-panel">
+        <div class="carrito-header">
+            <div class="header-title">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Carrito de Compras</h2>
+            </div>
+            <button id="btn_cerrar_carrito" class="close-btn">&times;</button>
+        </div>
+
+        <div class="carrito-cuerpo" id="carrito_cuerpo"></div>
+
+        <div class="carrito-footer">
+            <div class="carrito-total">
+                <span>Total</span>
+                <span id="total_monto">S/ 0.00</span>
+            </div>
+            <button class="btn-proceder-pago">Proceder al pago</button>
+            <p class="transaccion-segura">Transacciones seguras y encriptadas.</p>
+        </div>
+    </div>
+
+    <div id="carrito_overlay" class="carrito-overlay"></div>
+
+    <!-- MODAL CONFIRMACIÓN -->
+    <div id="modal-confirmacion" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirmar pago</h3>
+                <button class="modal-close" data-close="modal-confirmacion">&times;</button>
+            </div>
+
+            <p id="modal-confirmacion-text">¿Seguro que deseas realizar el pago?</p>
+
+            <div class="modal-actions">
+                <button class="btn-modal btn-cancel" data-close="modal-confirmacion">Cancelar</button>
+                <button id="modal-btn-confirmar" class="btn-modal btn-confirmar">Sí, pagar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL GRACIAS -->
+    <div id="modal-gracias" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>¡Gracias!</h3>
+                <button class="modal-close" data-close="modal-gracias">&times;</button>
+            </div>
+
+            <p>¡Gracias por tu compra simulada!</p>
+
+            <div class="modal-actions">
+                <button class="btn-modal btn-confirmar" data-close="modal-gracias">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -1,0 +1,58 @@
+/* 
+CONTACTO
+*/
+
+.section_content_3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section_titulo_3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.section_descripcion_3 {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.contacto_form {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form_cuerpo {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #2563eb;
+}
+
+.form_Mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

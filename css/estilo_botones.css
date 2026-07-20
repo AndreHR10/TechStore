@@ -45,6 +45,18 @@ BOTONES
     background: #1141b1;
 }
 
+.btn_agregar_tabla{
+    color: rgb(71, 71, 71);
+    transition: 0.3s;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.btn_agregar_tabla:hover{
+    background: #d9dbea;
+    color: #2563eb;
+}
+
 .btn_agregar i{
     font-size: 20px;
 }
@@ -117,7 +129,41 @@ BOTONES
   color: #4f46e5;
 }
 
+.btn-cancel:hover{
+  background: #d7ddf2;
+  color: #362dd7;
+}
+
 .btn-confirmar{
   background: #5d3df3;
   color: #fff;
+}
+
+.btn-confirmar:hover{
+  background: #4829d1;
+  color: #fff;
+}
+/*
+CONTACTO
+*/
+
+.btn_EnviarMensaje {
+    width: 100%;
+    background-color: #4F39F6;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn_EnviarMensaje:hover {
+    background-color: #4338CA;
 }

@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (carrito.length === 0) {
             carritoCuerpo.innerHTML = `<p class="carrito-vacio">Tu carrito está vacío</p>`;
             totalMonto.textContent = "S/ 0.00";
-            actualizarBadge(); // ✅ clave: actualiza badge cuando está vacío
+            actualizarBadge();
             return;
         }
 
@@ -144,12 +144,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function agregarProductoAlCarrito(boton) {
+        
         const cardProducto = boton.closest(".catalogo_cantenido");
-        if (!cardProducto) return;
+        const filaTabla = boton.closest(".productos_tabla_row");
 
-        const nombre = cardProducto.querySelector(".catalogo_cantenido_TITULO").textContent;
-        const precioTexto = cardProducto.querySelector(".catalogo_cantenido_PRECIO").textContent;
-        const imagen = cardProducto.querySelector(".catalogo_cantenido_imagen").src;
+        let nombre, precioTexto, imagen;
+
+        if (cardProducto) {
+            nombre = cardProducto.querySelector(".catalogo_cantenido_TITULO").textContent;
+            precioTexto = cardProducto.querySelector(".catalogo_cantenido_PRECIO").textContent;
+            imagen = cardProducto.querySelector(".catalogo_cantenido_imagen").src;
+        } else if (filaTabla) {
+            nombre = filaTabla.querySelector(".productos_tabla_cell_NAME").textContent;
+            precioTexto = filaTabla.querySelector(".productos_tabla_cell_PRECIO").textContent;
+            imagen = filaTabla.querySelector(".productos_tabla_cell_imagen img").src;
+        } else {
+            return;
+        }
 
         const precio = convertirPrecio(precioTexto);
 
@@ -171,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.addEventListener("click", (e) => {
-        const botonAgregar = e.target.closest(".btn_agregar");
+        const botonAgregar = e.target.closest(".btn_agregar , .btn_agregar_tabla");
         if (botonAgregar) {
             agregarProductoAlCarrito(botonAgregar);
         }

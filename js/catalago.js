@@ -96,6 +96,7 @@ function filtrar(categoria, boton) {
         }
     });
 }
+
 /*
  BOTÓN VER DETALLES
 */

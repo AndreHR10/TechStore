@@ -5,6 +5,10 @@ SECCIONES GENERALES
     padding: 80px 40px;
 }
 
+.section_2 {
+    padding: 10px 40px;
+}
+
 .section_contentido {
     text-align: center;
     margin-bottom: 40px;
@@ -40,7 +44,6 @@ INICIO
 /* 
 CATÁLOGO
 */
-
 .section_content_1 {
     text-align: center;
     margin-bottom: 40px;
@@ -59,7 +62,7 @@ CATÁLOGO
 }
 
 .section_content_1_2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-left: 100px;
     margin-right: 100px;
@@ -104,6 +107,7 @@ CATÁLOGO
 .catalogo_Madre_2 {
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 280px);
     gap: 25px;

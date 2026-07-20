@@ -23,6 +23,18 @@ function irInicio(elemento) {
     document.querySelector("#catalogo_completo").style.display = "none";
 
     document.querySelector("#inicio").scrollIntoView({ behavior: "smooth" });
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+     /* ACTIVAR BOTON */
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.classList.remove("active");
+
+        if (link.textContent.trim() === "Inicio") {
+            link.classList.add("active");
+        }
+    });
+
     localStorage.setItem("vista", "inicio");
 }
 
@@ -35,6 +47,18 @@ function irCatalogo(elemento) {
     document.querySelector("#catalogo_completo").style.display = "block";
 
     document.querySelector("#catalogo_completo").scrollIntoView({ behavior: "smooth" });
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+     /* ACTIVAR BOTON */
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.classList.remove("active");
+
+        if (link.textContent.trim() === "Catálogo") {
+            link.classList.add("active");
+        }
+    });
+    
     localStorage.setItem("vista", "catalogo");
 }
 
@@ -47,6 +71,18 @@ function irContacto(elemento) {
     document.querySelector("#contacto").style.display = "block";
 
     document.querySelector("#contacto").scrollIntoView({ behavior: "smooth" });
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+     /* ACTIVAR BOTON */
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.classList.remove("active");
+
+        if (link.textContent.trim() === "Contacto") {
+            link.classList.add("active");
+        }
+    });
+
     localStorage.setItem("vista", "contacto");
 }
 
@@ -56,7 +92,9 @@ function mostrarCatalogo() {
     document.querySelector(".mensaje_animado_container").style.display = "none";
     document.querySelector("#catalogo_completo").style.display = "block";
 
-    /* ACTIVAR BOTON CATALOGO */
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    /* ACTIVAR BOTON */
     document.querySelectorAll(".nav-link").forEach(link => {
         link.classList.remove("active");
 

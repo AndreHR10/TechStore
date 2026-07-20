@@ -55,3 +55,12 @@ MODAL
 .modal-close{
   transition: color .2s ease;
 }
+.modal-close:hover {
+    color: #ff4d4d; 
+}
+
+.modal.show {
+    display: flex !important; 
+    opacity: 1;
+    pointer-events: auto;
+}

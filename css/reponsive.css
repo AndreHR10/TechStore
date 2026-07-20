@@ -49,6 +49,20 @@
     }
 }
 
+/* FOTEER */
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
 
     /* INICIO */
@@ -196,5 +210,14 @@
     .site-footer {
         padding: 15px;
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .contacto_container {
+        grid-template-columns: 1fr;
+    }
+    .form_row {
+        grid-template-columns: 1fr;
     }
 }

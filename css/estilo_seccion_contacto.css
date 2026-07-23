@@ -27,7 +27,7 @@ font-size: 1rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 0.8fr 2.2fr; 
-    gap: 50px;
+    gap: 25px;
     align-items: start;
 }
 

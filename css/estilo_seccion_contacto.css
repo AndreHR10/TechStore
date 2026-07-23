@@ -2,19 +2,19 @@
 CONTACTO
 */
 .section_content_3 {
-  text-align: center;
-  margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .section_titulo_3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #000000;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000000;
 }
 
 .section_descripcion_3 {
-color: #000000;
-font-size: 1rem;
+    color: #000000;
+    font-size: 1rem;
 }
 
 .section_contacto {
@@ -22,13 +22,13 @@ font-size: 1rem;
     padding: 10px 20px 60px 20px;
 }
 
-.contacto_container{
-    max-width:1300px;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    gap:5px;
-    align-items:start;
+.contacto_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    align-items: start;
 }
 
 .contacto_info {
@@ -149,7 +149,7 @@ font-size: 1rem;
 }
 
 
-.form-input{
+.form-input {
     font-weight: 500;
 }
 
@@ -159,12 +159,10 @@ font-size: 1rem;
     box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
 }
 
-.form-textarea{
-    width:100%;
-    resize:vertical;
-    min-height:120px;
-    min-width:0;
-    box-sizing:border-box;
+.form-textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 120px;
+    min-width: 0;
+    box-sizing: border-box;
 }
-
-

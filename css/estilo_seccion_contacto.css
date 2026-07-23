@@ -23,10 +23,10 @@ font-size: 1rem;
 }
 
 .contacto_container {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.8fr 2.2fr;
     gap: 25px;
     align-items: start;
 }

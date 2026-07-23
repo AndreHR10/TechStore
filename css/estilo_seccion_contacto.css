@@ -23,9 +23,8 @@ font-size: 1rem;
 }
 
 .contacto_container {
-    max-width: 1300px !important;
-    width: 100% !important;
-    margin: 0 auto !important;
+    max-width: 1300px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 25px;
